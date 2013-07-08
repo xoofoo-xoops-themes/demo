@@ -1,0 +1,12 @@
+<!-- [* $Id: xo_footer.html 268 2010-04-17 12:51:23Z kris_fr $ *] -->
+<div id="xo-footer" <{if $xoops_isadmin}>class="xo-footbottom"<{/if}>>
+	<!-- add by kris_fr for img/link facebook and twitter -->
+	<{includeq file="$xoops_module_theme/xotpl/xo_followme.html"}>
+	
+	<div id="xo-rss">
+		<a href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_RSS}>">
+			<img src="<{xoImgUrl icons/action/feed.png}>" alt="<{$smarty.const.THEME_RSS}>" />
+		</a>
+	</div>
+	<div id="xo-copyright"><p><{$xoops_footer}></p></div>
+</div>
